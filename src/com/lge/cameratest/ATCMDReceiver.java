@@ -4,6 +4,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.util.Log;
+import android.util.Log;
+import android.util.Log;
 
 public class ATCMDReceiver extends BroadcastReceiver {
 	private static final String TAG = "Phone Test Camera ATCMDReceiver";
