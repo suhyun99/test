@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<resources>
+    <!-- Camera Preferences Video Quality entries -->
+    <string-array name="pref_omap3_video_quality_entries" translatable="false">
+        <item>@string/pref_omap3_video_quality_entry_high</item>
+        <item>@string/pref_omap3_video_quality_entry_low</item>
+        <item>@string/pref_omap3_video_quality_entry_mms</item>
+        <item>@string/pref_omap3_video_quality_entry_youtube</item>
+    </string-array>
+
+    <string-array name="pref_omap3_video_quality_entryvalues" translatable="false">
+        <item>high</item>
+        <item>low</item>
+        <item>mms</item>
+        <item>youtube</item>
+    </string-array>
+
+    <array name="video_quality_icons" translatable="false">
+        <item>@drawable/ic_viewfinder_video_quality_high</item>
+        <item>@drawable/ic_viewfinder_video_quality_low</item>
+        <item>@drawable/ic_viewfinder_video_quality_mms</item>
+        <item>@drawable/ic_viewfinder_video_quality_youtube</item>
+    </array>
+
+    <!-- Camera Preferences Output Format dialog box entries -->
+    <string-array name="pref_camera_outputformat_entries">
+        <item>@string/pref_camera_outputformat_entry_1</item>
+        <item>@string/pref_camera_outputformat_entry_2</item>
+    </string-array>
+
+    <string-array name="pref_camera_outputformat_entryvalues">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <array name="pref_camera_outputformat_icons" translatable="false">
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+    </array>
+
+    <!-- Camera Preferences Video Duration dialog box entries -->
+    <string-array name="pref_camera_video_duration_entries" translatable="false">
+        <item>@string/pref_camera_video_duration_entry_mms</item>
+        <item>@string/pref_camera_video_duration_entry_10</item>
+        <item>@string/pref_camera_video_duration_entry_30</item>
+        <item>@string/pref_camera_video_duration_entry_600</item>
+    </string-array>
+
+    <!-- The numbers are in minutes, except -1 means the duration suitable for mms. -->
+    <string-array name="pref_camera_video_duration_entryvalues" translatable="false">
+        <item>-1</item>
+        <item>10</item>
+        <item>30</item>
+        <item>600</item>
+    </string-array>
+
+    <!-- Camera Preferences Video Duration icons -->
+  <array name="pref_camera_video_duration_icons" translatable="false">
+        <item>@drawable/ic_viewfinder_video_quality_mms</item>
+        <item>@drawable/ic_viewfinder_video_quality_low</item>
+        <item>@drawable/ic_viewfinder_video_quality_high</item>
+        <item>@drawable/ic_viewfinder_video_quality_youtube</item>
+    </array>
+
+    <string-array name="pref_omap3_camera_picturesize_entries" translatable="false">
+        <item>@string/pref_omap3_camera_picturesize_entry_3280x2464</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_2592x1944</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_2048x1536</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_1600x1200</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_1280x960</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_640x480</item>
+        <item>@string/pref_omap3_camera_picturesize_entry_320x240</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_picturesize_entryvalues" translatable="false">
+        <item>3280x2464</item>
+        <item>2592x1944</item>
+        <item>2048x1536</item>
+        <item>1600x1200</item>
+        <item>1280x960</item>
+        <item>640x480</item>
+        <item>320x240</item>
+    </string-array>
+
+<!-- Camera Preferences Video format dialog box entries -->
+    <string-array name="pref_camera_video_format_entries" translatable="false">
+        <item>@string/pref_camera_video_format_entry_1</item>
+        <item>@string/pref_camera_video_format_entry_2</item>
+        <item>@string/pref_camera_video_format_entry_3</item>
+        <item>@string/pref_camera_video_format_entry_4</item>
+        <item>@string/pref_camera_video_format_entry_5</item>
+        <item>@string/pref_camera_video_format_entry_6</item>
+        <item>@string/pref_camera_video_format_entry_7</item>
+        <item>@string/pref_camera_video_format_entry_8</item>
+        <item>@string/pref_camera_video_format_entry_9</item>
+        <item>@string/pref_camera_video_format_entry_10</item>
+    </string-array>
+
+    <string-array name="pref_camera_video_format_entryvalues" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <!-- Camera Preferences Audio Encoder dialog box entries -->
+    <string-array name="pref_camera_audioencoder_entries">
+        <item>@string/pref_camera_audioencoder_entry_1</item>
+        <item>@string/pref_camera_audioencoder_entry_3</item>
+        <item>@string/pref_camera_audioencoder_entry_0</item>
+    </string-array>
+
+    <string-array name="pref_camera_audioencoder_entryvalues">
+        <item>1</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+
+    <array name="pref_camera_audioencoder_icons">
+        <item>@drawable/ic_menuselect_wb_fluorescent</item>
+        <item>@drawable/ic_menuselect_wb_fluorescent</item>
+        <item>@drawable/ic_menuselect_wb_fluorescent</item>
+    </array>
+
+    <!-- Camera Preferences Video Encoder dialog box entries -->
+    <string-array name="pref_camera_videoencoder_entries">
+        <item>@string/pref_camera_videoencoder_entry_1</item>
+        <item>@string/pref_camera_videoencoder_entry_2</item>
+        <item>@string/pref_camera_videoencoder_entry_3</item>
+    </string-array>
+
+    <string-array name="pref_camera_videoencoder_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+<!-- Camera Preferences Video FrameRate dialog box entries -->
+    <string-array name="pref_camera_videoframerate_entries">
+        <item>@string/pref_camera_videoframerate_entry_1</item>
+        <item>@string/pref_camera_videoframerate_entry_2</item>
+        <item>@string/pref_camera_videoframerate_entry_3</item>
+        <item>@string/pref_camera_videoframerate_entry_4</item>
+        <item>@string/pref_camera_videoframerate_entry_5</item>
+        <item>@string/pref_camera_videoframerate_entry_6</item>
+        <item>@string/pref_camera_videoframerate_entry_7</item>
+        <item>@string/pref_camera_videoframerate_entry_8</item>
+    </string-array>
+
+    <string-array name="pref_camera_videoframerate_entryvalues">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>24</item>
+        <item>25</item>
+        <item>30</item>
+        <item>33</item>
+    </string-array>
+
+    <!-- Camera Preferences Video BitRate dialog box entries -->
+    <string-array name="pref_camera_videobitrate_entries">
+        <item>@string/pref_camera_videobitrate_entry_0</item>
+        <item>@string/pref_camera_videobitrate_entry_1</item>
+        <item>@string/pref_camera_videobitrate_entry_2</item>
+        <item>@string/pref_camera_videobitrate_entry_3</item>
+        <item>@string/pref_camera_videobitrate_entry_4</item>
+        <item>@string/pref_camera_videobitrate_entry_5</item>
+        <item>@string/pref_camera_videobitrate_entry_6</item>
+        <item>@string/pref_camera_videobitrate_entry_7</item>
+        <item>@string/pref_camera_videobitrate_entry_8</item>
+        <item>@string/pref_camera_videobitrate_entry_9</item>
+        <item>@string/pref_camera_videobitrate_entry_10</item>
+        <item>@string/pref_camera_videobitrate_entry_11</item>
+        <item>@string/pref_camera_videobitrate_entry_12</item>
+        <item>@string/pref_camera_videobitrate_entry_13</item>
+        <item>@string/pref_camera_videobitrate_entry_14</item>
+        <item>@string/pref_camera_videobitrate_entry_15</item>
+        <item>@string/pref_camera_videobitrate_entry_16</item>
+    </string-array>
+
+    <string-array name="pref_camera_videobitrate_entryvalues">
+        <item>0</item>
+        <item>64000</item>
+        <item>128000</item>
+        <item>192000</item>
+        <item>240000</item>
+        <item>320000</item>
+        <item>360000</item>
+        <item>384000</item>
+        <item>420000</item>
+        <item>768000</item>
+        <item>1000000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>4096000</item>
+        <item>6000000</item>
+        <item>8000000</item>
+        <item>10000000</item>
+    </string-array>
+
+    <array name="pref_camera_video_format_icons">
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+    </array>
+
+    <string-array name="pref_omap3_camera_previewsize_entries" translatable="false">
+        <item>@string/pref_omap3_camera_previewsize_entry_qcif</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_cif</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_qvga</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_vga</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_pal</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_ntsc</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_d1</item>
+        <item>@string/pref_omap3_camera_previewsize_entry_hd</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_previewsize_entryvalues" translatable="false">
+        <item>176x144</item>
+        <item>352x288</item>
+        <item>320x240</item>
+        <item>640x480</item>
+        <item>768x576</item>
+        <item>720x576</item>
+        <item>720x480</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_previewframerate_entries">
+        <item>@string/pref_omap3_camera_previewframerate_entry_ten</item>
+        <item>@string/pref_omap3_camera_previewframerate_entry_fifteen</item>
+        <item>@string/pref_omap3_camera_previewframerate_entry_twenty</item>
+        <item>@string/pref_omap3_camera_previewframerate_entry_thirty</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_previewframerate_entryvalues">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Camera Preferences JPEG quality dialog box entries -->
+    <string-array name="pref_omap3_camera_jpegquality_entries" translatable="false">
+        <item>@string/pref_omap3_camera_jpegquality_entry_superfine</item>
+        <item>@string/pref_omap3_camera_jpegquality_entry_fine</item>
+        <item>@string/pref_omap3_camera_jpegquality_entry_normal</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_jpegquality_entryvalues" translatable="false">
+        <item>superfine</item>
+        <item>fine</item>
+        <item>normal</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_saturation_entries" translatable="false">
+        <item>@string/pref_omap3_camera_saturation_entry_low</item>
+        <item>@string/pref_omap3_camera_saturation_entry_medium</item>
+        <item>@string/pref_omap3_camera_saturation_entry_high</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_saturation_entryvalues" translatable="false">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_sharpness_entries" translatable="false">
+        <item>@string/pref_omap3_camera_sharpness_entry_low</item>
+        <item>@string/pref_omap3_camera_sharpness_entry_medium</item>
+        <item>@string/pref_omap3_camera_sharpness_entry_high</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_sharpness_entryvalues" translatable="false">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_brightness_entries" translatable="false">>
+        <item>@string/pref_omap3_camera_brightness_entry_low</item>
+        <item>@string/pref_omap3_camera_brightness_entry_medium</item>
+        <item>@string/pref_omap3_camera_brightness_entry_high</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_brightness_entryvalues" translatable="false">>
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_contrast_entries" translatable="false">
+        <item>@string/pref_omap3_camera_contrast_entry_low</item>
+        <item>@string/pref_omap3_camera_contrast_entry_medium</item>
+        <item>@string/pref_omap3_camera_contrast_entry_high</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_contrast_entryvalues" translatable="false">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_mode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_mode_entry_performance</item>
+        <item>@string/pref_omap3_camera_mode_entry_quality</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_mode_entryvalues" translatable="false">
+        <item>high-performance</item>
+        <item>high-quality</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_ipp_entries" translatable="false">
+        <item>@string/pref_omap3_camera_ipp_entry_off</item>
+        <item>@string/pref_omap3_camera_ipp_entry_chroma</item>
+        <item>@string/pref_omap3_camera_ipp_entry_nfee</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_ipp_entryvalues" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_shutter_entries" translatable="false">
+        <item>@string/pref_omap3_camera_shutter_entry_enable</item>
+        <item>@string/pref_omap3_camera_shutter_entry_disable</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_shutter_entryvalues" translatable="false">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_thumbnail_entries" translatable="false">
+        <item>@string/pref_omap3_camera_thumbnail_entry_enable</item>
+        <item>@string/pref_omap3_camera_thumbnail_entry_disable</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_thumbnail_entryvalues" translatable="false">
+        <item>enabled</item>
+        <item>disabled</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_metermode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_metermode_entry_center</item>
+        <item>@string/pref_omap3_camera_metermode_entry_average</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_metermode_entryvalues" translatable="false">
+        <item>center</item>
+        <item>average</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_iso_entries" translatable="false">
+        <item>@string/pref_omap3_camera_iso_entry_auto</item>
+        <item>@string/pref_omap3_camera_iso_entry_100</item>
+        <item>@string/pref_omap3_camera_iso_entry_200</item>
+        <item>@string/pref_omap3_camera_iso_entry_400</item>
+        <item>@string/pref_omap3_camera_iso_entry_800</item>
+        <item>@string/pref_omap3_camera_iso_entry_1000</item>
+        <item>@string/pref_omap3_camera_iso_entry_1200</item>
+        <item>@string/pref_omap3_camera_iso_entry_1600</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_iso_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>100</item>
+        <item>200</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1200</item>
+        <item>1600</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_caf_entries" translatable="false">
+        <item>@string/pref_omap3_camera_caf_entry_off</item>
+        <item>@string/pref_omap3_camera_caf_entry_on</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_caf_entryvalues" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_exposuremode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_exposuremode_entry_auto</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_macro</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_portrait</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_landscape</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_sports</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_night</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_nightportrait</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_backlighting</item>
+        <item>@string/pref_omap3_camera_exposuremode_entry_verylong</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_exposuremode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>macro</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>sports</item>
+        <item>night</item>
+        <item>night-portrait</item>
+        <item>backlighting</item>
+        <item>very-long</item>
+    </string-array>
+
+    <!-- Camera Preferences focus mode dialog box entries -->
+    <string-array name="pref_omap3_camera_focusmode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_focusmode_entry_auto</item>
+        <item>@string/pref_omap3_camera_focusmode_entry_infinity</item>
+        <item>@string/pref_omap3_camera_focusmode_entry_macro</item>
+        <item>@string/pref_omap3_camera_focusmode_entry_fixed</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_focusmode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>infinity</item>
+        <item>macro</item>
+        <item>fixed</item>
+    </string-array>
+
+    <!-- Camera Preferences flash mode dialog box entries -->
+    <string-array name="pref_omap3_camera_flashmode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_flashmode_entry_auto</item>
+        <item>@string/pref_omap3_camera_flashmode_entry_on</item>
+        <item>@string/pref_omap3_camera_flashmode_entry_off</item>
+        <item>@string/pref_omap3_camera_flashmode_entry_redeye</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_flashmode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>on</item>
+        <item>off</item>
+        <item>red-eye</item>
+    </string-array>
+
+    <array name="pref_omap3_camera_flashmode_icons">
+        <item>@drawable/ic_menuselect_flash_auto</item>
+        <item>@drawable/ic_menuselect_flash_on</item>
+        <item>@drawable/ic_menuselect_flash_off</item>
+        <item>@drawable/ic_menuselect_flash_on</item>
+    </array>
+
+    <array name="flashmode_icons">
+        <item>@drawable/ic_viewfinder_flash_auto</item>
+        <item>@drawable/ic_viewfinder_flash_on</item>
+        <item>@drawable/ic_viewfinder_flash_off</item>
+        <item>@drawable/ic_viewfinder_flash_on</item>
+    </array>
+
+    <!-- Videocamera Preferences flash mode dialog box entries -->
+    <string-array name="pref_omap3_camera_video_flashmode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_video_flashmode_entry_torch</item>
+        <item>@string/pref_omap3_camera_flashmode_entry_off</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_video_flashmode_entryvalues" translatable="false">
+        <item>torch</item>
+        <item>off</item>
+    </string-array>
+
+    <array name="pref_omap3_camera_video_flashmode_icons">
+        <item>@drawable/ic_menuselect_flash_on</item>
+        <item>@drawable/ic_menuselect_flash_off</item>
+    </array>
+
+    <array name="video_flashmode_icons">
+        <item>@drawable/ic_viewfinder_flash_on</item>
+        <item>@drawable/ic_viewfinder_flash_off</item>
+    </array>
+
+    <string-array name="pref_omap3_camera_recordlocation_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <array name="pref_omap3_camera_recordlocation_entries" translatable="false">
+        <item>@string/pref_omap3_camera_recordlocation_entry_off</item>
+        <item>@string/pref_omap3_camera_recordlocation_entry_on</item>
+    </array>
+
+    <array name="pref_omap3_camera_recordlocation_icons" translatable="false">
+        <item>@drawable/ic_menuselect_gps_off</item>
+        <item>@drawable/ic_menuselect_gps_on</item>
+    </array>
+
+    <array name="recordlocation_icons">
+        <item>@drawable/ic_viewfinder_gps_off</item>
+        <item>@drawable/ic_viewfinder_gps_on</item>
+    </array>
+
+    <!-- Camera Preferences White Balance dialog box entries -->
+    <string-array name="pref_omap3_camera_whitebalance_entries" translatable="false">
+        <item>@string/pref_omap3_camera_whitebalance_entry_auto</item>
+        <item>@string/pref_omap3_camera_whitebalance_entry_incandescent</item>
+        <item>@string/pref_omap3_camera_whitebalance_entry_daylight</item>
+        <item>@string/pref_omap3_camera_whitebalance_entry_fluorescent</item>
+        <item>@string/pref_omap3_camera_whitebalance_entry_cloudy</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_whitebalance_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>incandescent</item>
+        <item>daylight</item>
+        <item>fluorescent</item>
+        <item>cloudy-daylight</item>
+    </string-array>
+
+    <array name="pref_omap3_camera_whitebalance_icons">
+        <item>@drawable/ic_menuselect_wb_auto</item>
+        <item>@drawable/ic_menuselect_wb_incandescent</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_fluorescent</item>
+        <item>@drawable/ic_menuselect_wb_cloudy</item>
+    </array>
+
+    <array name="whitebalance_icons">
+        <item>@drawable/ic_viewfinder_wb_auto</item>
+        <item>@drawable/ic_viewfinder_wb_incandescent</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_fluorescent</item>
+        <item>@drawable/ic_viewfinder_wb_cloudy</item>
+    </array>
+
+    <!-- Camera Preferences Color effect dialog box entries -->
+    <string-array name="pref_omap3_camera_coloreffect_entries" translatable="false">
+        <item>@string/pref_omap3_camera_coloreffect_entry_none</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_mono</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_sepia</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_negative_sepia</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_negative</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_vivid</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_blue</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_emboss</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_solarize</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_posterize</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_aqua</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_pastel</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_mosaic</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_redtint</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_bluetint</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_greentint</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_whiteboard</item>
+        <item>@string/pref_omap3_camera_coloreffect_entry_blackboard</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_coloreffect_entryvalues" translatable="false">
+        <item>none</item>
+        <item>mono</item>
+        <item>sepia</item>
+        <item>negative-sepia</item>
+        <item>negative</item>
+        <item>vivid</item>
+        <item>blue</item>
+        <item>emboss</item>
+        <item>solarize</item>
+        <item>posterize</item>
+        <item>aqua</item>
+        <item>pastel</item>
+        <item>mosaic</item>
+        <item>red-tint</item>
+        <item>blue-tint</item>
+        <item>green-tint</item>
+        <item>whiteboard</item>
+        <item>blackboard</item>
+    </string-array>
+
+    <!-- Camera Preferences Scene Mode dialog box entries -->
+    <string-array name="pref_omap3_camera_scenemode_entries" translatable="false">
+        <item>@string/pref_omap3_camera_scenemode_entry_auto</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_action</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_portrait</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_landscape</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_night</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_theatre</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_beach</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_snow</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_sunset</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_steadyphoto</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_fireworks</item>
+        <item>@string/pref_omap3_camera_scenemode_entry_sports</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_scenemode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>action</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>night</item>
+        <item>theatre</item>
+        <item>beach</item>
+        <item>snow</item>
+        <item>sunset</item>
+        <item>steadyphoto</item>
+        <item>fireworks</item>
+        <item>sports</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_quickcapture_entries" translatable="false">
+        <item>@string/pref_omap3_camera_quickcapture_entry_off</item>
+        <item>@string/pref_omap3_camera_quickcapture_entry_on</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_quickcapture_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_raw_entries">
+        <item>@string/pref_omap3_camera_raw_entry_enable</item>
+        <item>@string/pref_omap3_camera_raw_entry_disable</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_raw_entryvalues">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_antibanding_entries">
+        <item>@string/pref_omap3_camera_antibanding_entry_off</item>
+        <item>@string/pref_omap3_camera_antibanding_entry_50</item>
+        <item>@string/pref_omap3_camera_antibanding_entry_60</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_antibanding_entryvalues">
+        <item>off</item>
+        <item>50hz</item>
+        <item>60hz</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_manualfocus_entries" translatable="false">
+        <item>@string/pref_omap3_camera_manualfocus_entry_off</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_0</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_10</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_20</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_30</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_40</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_50</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_60</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_70</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_80</item>
+        <item>@string/pref_omap3_camera_manualfocus_entry_90</item>
+    </string-array>
+
+    <string-array name="pref_omap3_camera_manualfocus_entryvalues" translatable="false">
+        <item>-1</item>
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+    </string-array>
+
+    <array name="pref_omap3_camera_manualfocus_icons">
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+    </array>
+    <array name="manualfocus_icons">
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+    </array>
+
+    <string-array name="pref_omap3_camera_burst_entries">
+        <item>@string/pref_omap3_camera_burst_entry_zero</item>
+        <item>@string/pref_omap3_camera_burst_entry_one</item>
+        <item>@string/pref_omap3_camera_burst_entry_two</item>
+        <item>@string/pref_omap3_camera_burst_entry_three</item>
+        <item>@string/pref_omap3_camera_burst_entry_four</item>
+        <item>@string/pref_omap3_camera_burst_entry_five</item>
+        <item>@string/pref_omap3_camera_burst_entry_six</item>
+        <item>@string/pref_omap3_camera_burst_entry_seven</item>
+        <item>@string/pref_omap3_camera_burst_entry_eight</item>
+        <item>@string/pref_omap3_camera_burst_entry_nine</item>
+        <item>@string/pref_omap3_camera_burst_entry_10</item>
+        <item>@string/pref_omap3_camera_burst_entry_11</item>
+        <item>@string/pref_omap3_camera_burst_entry_12</item>
+        <item>@string/pref_omap3_camera_burst_entry_13</item>
+        <item>@string/pref_omap3_camera_burst_entry_14</item>
+        <item>@string/pref_omap3_camera_burst_entry_15</item>
+    </string-array>
+    <string-array name="pref_omap3_camera_burst_entryvalues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+</resources>

@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General strings -->
+
+    <!-- title for the dialog showing the error of camera hardware -->
+    <string name="camera_error_title">Camera error</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+    <string name="camera_label">OMAP3 Camera</string>
+
+    <!-- label for the 'video recording application shown in the top level 'all applications' -->
+    <string name="video_camera_label">OMAP3 Camcorder</string>
+
+    <!-- label for the folder that contains Camera pictures in the gallery -->
+    <string name="gallery_camera_bucket_name">OMAP3 Camera pictures</string>
+
+    <!-- label for the folder that contains Camera videos in the gallery -->
+    <string name="gallery_camera_videos_bucket_name">OMAP3 Camera videos</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <string name="wait">Please wait\u2026</string>
+
+    <!-- alert to the user to that an SD card must be installed before using the camera -->
+    <string name="no_storage">Please insert an SD card before using the camera.</string>
+
+    <!-- alert to the user to that the SD card is too full to complete the operation -->
+    <string name="not_enough_space">Your SD card is full.</string>
+
+    <!-- alert to the user to that the SD card is being disk-checked -->
+    <string name="preparing_sd">Preparing SD card\u2026</string>
+
+    <!-- Settings stuff -->
+
+    <!-- Menu items: -->
+    <!-- menu pick to go to the settings screen -->
+
+    <!-- menu pick to view the details of the currently selected image -->
+
+    <!-- menu pick to show the location of the currently selected image on maps-->
+
+    <!-- menu pick to rotate the currently selected image (brings up submenu) -->
+
+    <!-- menu pick to rotate the currently selected image to the left -->
+
+    <!-- menu pick to rotate the currently selected image to the right -->
+
+    <!-- Confirmation dialog title after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a video -->
+
+    <!-- Confirmation dialog when restoring settings -->
+    <string name="confirm_restore_title">Restore defaults</string>
+    <string name="confirm_restore_message">Camera settings will be restored to defaults.</string>
+
+    <!-- button in review mode indicating that the video just taken should be played -->
+    <string name="review_play">PLAY</string>
+
+    <!-- button in review mode indicating that the video recording session should be canceled -->
+    <string name="review_cancel">CANCEL</string>
+
+    <!-- button in review mode indicating that the taken video is OK to be attached/uploaded -->
+    <string name="review_ok">OK</string>
+
+    <!-- button in review mode indicate the user want to retake another picture for attachment -->
+    <string name="review_retake">RETAKE</string>
+
+    <!-- button indicating that the picture just taken should be deleted -->
+
+    <!-- button indicating that the picture just taken should be shared by email, mms, etc -->
+
+    <!-- button indicating that the picture just taken should be set as a contact photo, wallpaper, etc -->
+
+    <!-- button indicating that the picture just taken should be cropped -->
+
+    <!-- Toast after trying to share a picture indicating that there are no applications which are capable of so doing. -->
+
+    <!-- Toast after trying to share a video indicating that there are no applications which are capable of so doing. -->
+
+    <!-- Menu item for playing the video. -->
+
+    <!-- Button indicating to go to the image gallery -->
+    <string name="camera_gallery_photos_text">Gallery</string>
+
+    <!-- Settings screen, setting title text -->
+    <string name="pref_omap3_camera_recordlocation_title">Store location</string>
+
+    <string name="pref_omap3_camera_recordlocation_default" translatable="false">none</string>
+
+    <!-- Settings screen, Record location dialog choices -->
+    <string name="pref_omap3_camera_recordlocation_entry_off">Off</string>
+    <string name="pref_omap3_camera_recordlocation_entry_on">On</string>
+
+    <!-- The Video length settings in preference -->
+    <string name="pref_omap3_video_quality_title">Video quality</string>
+    <string name="pref_omap3_video_quality_default" translatable="false">high</string>
+    <string name="pref_omap3_video_quality_entry_high">High (30m)</string>
+    <string name="pref_omap3_video_quality_entry_low">Low (30m)</string>
+    <string name="pref_omap3_video_quality_entry_mms">MMS (Low, 30s)</string>
+    <string name="pref_omap3_video_quality_entry_youtube">YouTube (High, 10m)</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <string name="pref_omap3_camera_settings_category">Camera settings</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <string name="pref_omap3_camcorder_settings_category">Camcorder settings</string>
+	 <string name="pref_camcorder_settings_category">Camcorder settings</string>
+
+   <!-- Settings screen, Video FrameRate category title -->
+    <string name="pref_camera_videoframerate_category">Video FrameRate</string>
+
+    <!-- Default Video FrameRate setting. A numerical value. Do not translate. -->
+    <string name="pref_camera_videoframerate_default">24</string>
+
+    <!-- Settings screen, Select Video FrameRate title -->
+    <string name="pref_camera_videoframerate_title">Select Video FrameRate</string>
+
+    <!-- Settings screen, Video FrameRate dialog radio button choices -->
+    <string name="pref_camera_videoframerate_entry_1">5</string>
+    <string name="pref_camera_videoframerate_entry_2">10</string>
+    <string name="pref_camera_videoframerate_entry_3">15</string>
+    <string name="pref_camera_videoframerate_entry_4">20</string>
+    <string name="pref_camera_videoframerate_entry_5">24</string>
+    <string name="pref_camera_videoframerate_entry_6">25</string>
+    <string name="pref_camera_videoframerate_entry_7">30</string>
+    <string name="pref_camera_videoframerate_entry_8">33</string>
+
+<!-- Settings screen, Video BitRate category title -->
+    <string name="pref_camera_videobitrate_category">Video BitRate</string>
+
+    <!-- Default Video bitRate setting. A numerical value. Do not translate. -->
+    <string name="pref_camera_videobitrate_default">4096000</string>
+
+    <!-- Settings screen, Select Video bitRate title -->
+    <string name="pref_camera_videobitrate_title">Select Video bitRate</string>
+
+    <!-- Settings screen, Video bitRate dialog radio button choices -->
+    <string name="pref_camera_videobitrate_entry_0">Auto</string>
+    <string name="pref_camera_videobitrate_entry_1">64K</string>
+    <string name="pref_camera_videobitrate_entry_2">128K</string>
+    <string name="pref_camera_videobitrate_entry_3">192K</string>
+    <string name="pref_camera_videobitrate_entry_4">240K</string>
+    <string name="pref_camera_videobitrate_entry_5">320K</string>
+    <string name="pref_camera_videobitrate_entry_6">360K</string>
+    <string name="pref_camera_videobitrate_entry_7">384K</string>
+    <string name="pref_camera_videobitrate_entry_8">420K</string>
+    <string name="pref_camera_videobitrate_entry_9">768K</string>
+    <string name="pref_camera_videobitrate_entry_10">1M</string>
+    <string name="pref_camera_videobitrate_entry_11">1.5M</string>
+    <string name="pref_camera_videobitrate_entry_12">2M</string>
+    <string name="pref_camera_videobitrate_entry_13">4M</string>
+    <string name="pref_camera_videobitrate_entry_14">6M</string>
+    <string name="pref_camera_videobitrate_entry_15">8M</string>
+    <string name="pref_camera_videobitrate_entry_16">10M</string>
+
+    <!-- Settings screen, Audio Encoder category title -->
+    <string name="pref_camera_audioencoder_category">Audio Encoder</string>
+
+    <!-- Default Audio Encoder setting. A numerical value. Do not translate. -->
+    <string name="pref_camera_audioencoder_default">3</string>
+
+    <!-- Settings screen, Select Audio Encoder title -->
+    <string name="pref_camera_audioencoder_title">Select Audio Encoder</string>
+
+    <!-- Settings screen, Audio Encoder dialog radio button choices -->
+    <string name="pref_camera_audioencoder_entry_1">AMR-NB</string>
+    <string name="pref_camera_audioencoder_entry_3">AAC</string>
+    <string name="pref_camera_audioencoder_entry_0">No Audio</string>
+
+    <!-- Settings screen, Audio Encoder dialog title -->
+    <string name="pref_camera_audioencoder_dialogtitle">Audio Encoder</string>
+
+    <!-- Settings screen, Video Encoder category title -->
+    <string name="pref_camera_videoencoder_category">Video Encoder</string>
+
+    <!-- Default Video Encoder setting. A numerical value. Do not translate. -->
+    <string name="pref_camera_videoencoder_default">2</string>
+
+    <!-- Settings screen, Select Video Encoder title -->
+    <string name="pref_camera_videoencoder_title">Select Video Encoder</string>
+
+    <!-- Settings screen, Video Encoder dialog radio button choices -->
+    <string name="pref_camera_videoencoder_entry_1">H263</string>
+    <string name="pref_camera_videoencoder_entry_2">H264</string>
+    <string name="pref_camera_videoencoder_entry_3">MPEG4</string>
+
+    <!-- Default video format setting. A numerical value. -->
+    <string name="pref_camera_video_format_default" translatable="false">10</string>
+
+    <!-- Settings screen, Video format title -->
+    <string name="pref_camera_video_format_title">Video format</string>
+
+    <!-- Settings screen, Video format dialog radio button choices -->
+    <string name="pref_camera_video_format_entry_1">QCIF 176x144</string>
+    <string name="pref_camera_video_format_entry_2">CIF 352x288</string>
+    <string name="pref_camera_video_format_entry_3">QVGA 320x240</string>
+    <string name="pref_camera_video_format_entry_4">VGA 640x480</string>
+    <string name="pref_camera_video_format_entry_5">TV NTSC 704x480</string>
+    <string name="pref_camera_video_format_entry_6">TV PAL 704x576</string>
+    <string name="pref_camera_video_format_entry_7">DVD-Video NTSC 720x480</string>
+    <string name="pref_camera_video_format_entry_8">DVD-Video PAL 720x576</string>
+    <string name="pref_camera_video_format_entry_9">WVGA 800x480</string>
+    <string name="pref_camera_video_format_entry_10">1280x720</string>
+
+    <!-- Settings screen, Video format dialog title -->
+    <string name="pref_camera_video_format_dialogtitle">Video format</string>
+
+    <!-- Settings screen, Picture size title -->
+    <string name="pref_omap3_camera_picturesize_title">Picture size</string>
+
+    <!-- Settings screen, Picture size dialog radio button choices -->
+
+    <string name="pref_omap3_camera_picturesize_entry_3280x2464">8M Pixels</string>
+    <string name="pref_omap3_camera_picturesize_entry_2592x1944">5M Pixels</string>
+    <string name="pref_omap3_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_omap3_camera_picturesize_entry_1600x1200">2M Pixels</string>
+    <string name="pref_omap3_camera_picturesize_entry_1280x960">1M Pixels</string>
+    <string name="pref_omap3_camera_picturesize_entry_640x480">VGA</string>
+    <string name="pref_omap3_camera_picturesize_entry_320x240">QVGA</string>
+
+    <string name="pref_omap3_camera_previewsize_title">Preview size</string>
+    <string name="pref_omap3_camera_previewsize_default">640x480</string>
+    <string name="pref_omap3_camera_previewsize_entry_qcif">QCIF</string>
+    <string name="pref_omap3_camera_previewsize_entry_cif">CIF</string>
+    <string name="pref_omap3_camera_previewsize_entry_qvga">QVGA</string>
+    <string name="pref_omap3_camera_previewsize_entry_vga">VGA</string>
+    <string name="pref_omap3_camera_previewsize_entry_pal">PAL</string>
+    <string name="pref_omap3_camera_previewsize_entry_ntsc">NTSC</string>
+    <string name="pref_omap3_camera_previewsize_entry_d1">D1</string>
+    <string name="pref_omap3_camera_previewsize_entry_hd">720p</string>
+
+    <string name="pref_omap3_camera_previewframerate_title">Select FPS</string>
+    <string name="pref_omap3_camera_previewframerate_default">30</string>
+    <string name="pref_omap3_camera_previewframerate_entry_ten">10</string>
+    <string name="pref_omap3_camera_previewframerate_entry_fifteen">15</string>
+    <string name="pref_omap3_camera_previewframerate_entry_twenty">20</string>
+    <string name="pref_omap3_camera_previewframerate_entry_thirty">30</string>
+
+    <!-- Default picture quality setting. See
+         pref_omap3_camera_jpegquality_entryvalues for possible values -->
+    <string name="pref_omap3_camera_jpegquality_default" translatable="false">superfine</string>
+
+    <!-- Settings screen, Picture quality title -->
+    <string name="pref_omap3_camera_jpegquality_title">Picture quality</string>
+
+    <!-- Settings screen, Picture quality dialog radio button choices -->
+    <string name="pref_omap3_camera_jpegquality_entry_superfine">Super fine</string>
+    <string name="pref_omap3_camera_jpegquality_entry_fine">Fine</string>
+    <string name="pref_omap3_camera_jpegquality_entry_normal">Normal</string>
+
+    <string name="pref_omap3_camera_saturation_title">Saturation</string>
+    <string name="pref_omap3_camera_saturation_default">100</string>
+    <string name="pref_omap3_camera_saturation_entry_low">Low</string>
+    <string name="pref_omap3_camera_saturation_entry_medium">Medium</string>
+    <string name="pref_omap3_camera_saturation_entry_high">High</string>
+
+    <string name="pref_omap3_camera_sharpness_title">Sharpness</string>
+    <string name="pref_omap3_camera_sharpness_default">0</string>
+    <string name="pref_omap3_camera_sharpness_entry_low">Low</string>
+    <string name="pref_omap3_camera_sharpness_entry_medium">Medium</string>
+    <string name="pref_omap3_camera_sharpness_entry_high">High</string>
+
+    <string name="pref_omap3_camera_brightness_title">Brightness</string>
+    <string name="pref_omap3_camera_brightness_default">100</string>
+    <string name="pref_omap3_camera_brightness_entry_low">Low</string>
+    <string name="pref_omap3_camera_brightness_entry_medium">Medium</string>
+    <string name="pref_omap3_camera_brightness_entry_high">High</string>
+
+    <string name="pref_omap3_camera_contrast_title">Contrast</string>
+    <string name="pref_omap3_camera_contrast_default">100</string>
+    <string name="pref_omap3_camera_contrast_entry_low">Low</string>
+    <string name="pref_omap3_camera_contrast_entry_medium">Medium</string>
+    <string name="pref_omap3_camera_contrast_entry_high">High</string>
+
+    <string name="pref_omap3_camera_mode_title">Capture Mode</string>
+    <string name="pref_omap3_camera_mode_default">high-quality</string>
+    <string name="pref_omap3_camera_mode_entry_quality">High Quality</string>
+    <string name="pref_omap3_camera_mode_entry_performance">High Speed</string>
+
+    <string name="pref_omap3_camera_ipp_title">Image Post-Processing</string>
+    <string name="pref_omap3_camera_ipp_default">0</string>
+    <string name="pref_omap3_camera_ipp_entry_off">Off</string>
+    <string name="pref_omap3_camera_ipp_entry_chroma">Chroma Suppression</string>
+    <string name="pref_omap3_camera_ipp_entry_nfee">Edge Enhancement</string>
+
+    <string name="pref_omap3_camera_shutter_title">Shutter</string>
+    <string name="pref_omap3_camera_shutter_default">true</string>
+    <string name="pref_omap3_camera_shutter_entry_enable">Enabled</string>
+    <string name="pref_omap3_camera_shutter_entry_disable">Disabled</string>
+
+    <string name="pref_omap3_camera_thumbnail_title">Thumbnail Preview</string>
+    <string name="pref_omap3_camera_thumbnail_default">enabled</string>
+    <string name="pref_omap3_camera_thumbnail_entry_enable">Enable</string>
+    <string name="pref_omap3_camera_thumbnail_entry_disable">Disable</string>
+
+    <string name="pref_omap3_camera_metermode_title">Metering mode</string>
+    <string name="pref_omap3_camera_metermode_default">average</string>
+    <string name="pref_omap3_camera_metermode_entry_center">Center</string>
+    <string name="pref_omap3_camera_metermode_entry_average">Average</string>
+
+    <string name="pref_omap3_camera_iso_title">ISO</string>
+    <string name="pref_omap3_camera_iso_entry_default">auto</string>
+    <string name="pref_omap3_camera_iso_entry_auto">Auto</string>
+    <string name="pref_omap3_camera_iso_entry_100">100</string>
+    <string name="pref_omap3_camera_iso_entry_200">200</string>
+    <string name="pref_omap3_camera_iso_entry_400">400</string>
+    <string name="pref_omap3_camera_iso_entry_800">800</string>
+    <string name="pref_omap3_camera_iso_entry_1000">1000</string>
+    <string name="pref_omap3_camera_iso_entry_1200">1200</string>
+    <string name="pref_omap3_camera_iso_entry_1600">1600</string>
+
+    <string name="pref_omap3_camera_caf_title">Continuous Autofocus</string>
+    <string name="pref_omap3_camera_caf_default">0</string>
+    <string name="pref_omap3_camera_caf_entry_off">Off</string>
+    <string name="pref_omap3_camera_caf_entry_on">On</string>
+
+    <string name="pref_omap3_camera_exposuremode_title">Exposure Mode</string>
+    <string name="pref_omap3_camera_exposuremode_default">0</string>
+    <string name="pref_omap3_camera_exposuremode_entry_auto">Auto</string>
+    <string name="pref_omap3_camera_exposuremode_entry_macro">Macro</string>
+    <string name="pref_omap3_camera_exposuremode_entry_portrait">Portrait</string>
+    <string name="pref_omap3_camera_exposuremode_entry_landscape">Landscape</string>
+    <string name="pref_omap3_camera_exposuremode_entry_sports">Sports</string>
+    <string name="pref_omap3_camera_exposuremode_entry_night">Night</string>
+    <string name="pref_omap3_camera_exposuremode_entry_nightportrait">Night Portrait</string>
+    <string name="pref_omap3_camera_exposuremode_entry_backlighting">Backlighting</string>
+    <string name="pref_omap3_camera_exposuremode_entry_verylong">Very long</string>
+
+    <!-- Default focus mode setting.-->
+    <string name="pref_omap3_camera_focusmode_default" translatable="false">auto</string>
+
+    <!-- Settings screen, Focus mode title -->
+    <string name="pref_omap3_camera_focusmode_title">Focus mode</string>
+
+    <!-- Settings screen, Focue mode dialog radio button choices -->
+    <string name="pref_omap3_camera_focusmode_entry_auto">Auto</string>
+    <string name="pref_omap3_camera_focusmode_entry_infinity">Infinity</string>
+    <string name="pref_omap3_camera_focusmode_entry_macro">Macro</string>
+    <string name="pref_omap3_camera_focusmode_entry_fixed">Manual</string>
+
+    <!-- Default flash mode setting.-->
+    <!--<string name="pref_omap3_camera_flashmode_default" translatable="false">auto</string>
+ --><string name="pref_omap3_camera_flashmode_default" translatable="false">on</string>
+    <!-- Value for flash off setting-->
+    <string name="pref_omap3_camera_flashmode_no_flash" translatable="false">no_flash</string>
+
+    <!-- Settings screen, Flash mode title -->
+    <string name="pref_omap3_camera_flashmode_title">Flash mode</string>
+
+    <!-- Settings screen, Focue mode dialog radio button choices -->
+    <string name="pref_omap3_camera_flashmode_entry_auto">Auto</string>
+    <string name="pref_omap3_camera_flashmode_entry_on">On</string>
+    <string name="pref_omap3_camera_flashmode_entry_off">Off</string>
+    <string name="pref_omap3_camera_flashmode_entry_redeye">Red Eye</string>
+
+    <!-- Default videocamera flash mode setting.-->
+    <string name="pref_omap3_camera_video_flashmode_default" translatable="false">off</string>
+    <string name="pref_omap3_camera_video_flashmode_entry_torch">Torch</string>
+
+    <!-- Default white balance setting. -->
+    <string name="pref_omap3_camera_whitebalance_default" translatable="false">auto</string>
+
+    <!-- Settings screen, white balance title -->
+    <string name="pref_omap3_camera_whitebalance_title">White balance</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <string name="pref_omap3_camera_whitebalance_entry_auto">Auto</string>
+    <string name="pref_omap3_camera_whitebalance_entry_incandescent">Incandescent</string>
+    <string name="pref_omap3_camera_whitebalance_entry_daylight">Daylight</string>
+    <string name="pref_omap3_camera_whitebalance_entry_fluorescent">Fluorescent</string>
+    <string name="pref_omap3_camera_whitebalance_entry_cloudy">Cloudy</string>
+
+    <!-- Default color effect setting. -->
+    <string name="pref_omap3_camera_coloreffect_default" translatable="false">none</string>
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_omap3_camera_coloreffect_title">Color effect</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices -->
+    <string name="pref_omap3_camera_coloreffect_entry_none">None</string>
+    <string name="pref_omap3_camera_coloreffect_entry_mono">Mono</string>
+    <string name="pref_omap3_camera_coloreffect_entry_sepia">Sepia</string>
+    <string name="pref_omap3_camera_coloreffect_entry_negative_sepia">Negative sepia</string>
+    <string name="pref_omap3_camera_coloreffect_entry_negative">Negative</string>
+    <string name="pref_omap3_camera_coloreffect_entry_vivid">Vivid</string>
+    <string name="pref_omap3_camera_coloreffect_entry_blue">Blue</string>
+    <string name="pref_omap3_camera_coloreffect_entry_emboss">Emboss</string>
+    <!-- Color effect that overexposes and reverses some of the tones. -->
+    <string name="pref_omap3_camera_coloreffect_entry_solarize">Solarize</string>
+    <string name="pref_omap3_camera_coloreffect_entry_posterize">Posterize</string>
+    <string name="pref_omap3_camera_coloreffect_entry_aqua">Aqua</string>
+    <string name="pref_omap3_camera_coloreffect_entry_pastel">Pastel</string>
+    <string name="pref_omap3_camera_coloreffect_entry_mosaic">Mosaic</string>
+    <string name="pref_omap3_camera_coloreffect_entry_redtint">Red tint</string>
+    <string name="pref_omap3_camera_coloreffect_entry_bluetint">Blue tint</string>
+    <string name="pref_omap3_camera_coloreffect_entry_greentint">Green tint</string>
+    <string name="pref_omap3_camera_coloreffect_entry_whiteboard">Whiteboard</string>
+    <string name="pref_omap3_camera_coloreffect_entry_blackboard">Blackboard</string>
+
+    <!-- Default scene mode setting. -->
+    <string name="pref_omap3_camera_scenemode_default" translatable="false">auto</string>
+
+    <!-- Settings screen, Select Scene mode -->
+    <string name="pref_omap3_camera_scenemode_title">Scene mode</string>
+
+    <!-- Settings menu, scene mode choices -->
+    <string name="pref_omap3_camera_scenemode_entry_auto">Auto</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. -->
+    <string name="pref_omap3_camera_scenemode_entry_action">Action</string>
+    <!-- Scene mode that takes an image with as little noise as possible so details of the subject are maintained. -->
+    <string name="pref_omap3_camera_scenemode_entry_portrait">Portrait</string>
+    <!-- Scene mode that takes an image of a landscape assuming all subjects are relatively far from the phone. -->
+    <string name="pref_omap3_camera_scenemode_entry_landscape">Landscape</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. -->
+    <string name="pref_omap3_camera_scenemode_entry_night">Night</string>
+    <!-- Scene mode to be used in a stage show. -->
+    <string name="pref_omap3_camera_scenemode_entry_theatre">Theatre</string>
+    <!-- Scene mode optimized for taking images on the beach. -->
+    <string name="pref_omap3_camera_scenemode_entry_beach">Beach</string>
+    <!-- Scene mode optimized for taking images in the snow. -->
+    <string name="pref_omap3_camera_scenemode_entry_snow">Snow</string>
+    <!-- Scene mode optimized for taking images in the sunset. -->
+    <string name="pref_omap3_camera_scenemode_entry_sunset">Sunset</string>
+    <!-- Scene mode for taking a photo as sharp as possible. -->
+    <string name="pref_omap3_camera_scenemode_entry_steadyphoto">Steady photo</string>
+    <!-- Scene mode optimized for taking images of fireworks. -->
+    <!-- Hardcode sunset to fireworks -->
+    <string name="pref_omap3_camera_scenemode_entry_fireworks">Sunset</string>
+    <string name="pref_omap3_camera_scenemode_entry_sports">Sport</string>
+
+    <!-- Settings menu, enable quick capture mode or not -->
+    <string name="pref_omap3_camera_quickcapture_title">Quick capture</string>
+    <string name="pref_omap3_camera_quickcapture_default" translatable="false">off</string>
+    <string name="pref_omap3_camera_quickcapture_entry_on">On</string>
+    <string name="pref_omap3_camera_quickcapture_entry_off">Off</string>
+
+    <!-- Restore settings item in preference -->
+    <string name="pref_omap3_restore_title">Camera settings</string>
+    <string name="pref_omap3_restore_detail">Restore to defaults</string>
+
+    <!-- Exposure settings in preference -->
+    <string name="pref_omap3_exposure_title">Exposure</string>
+    <string name="pref_omap3_exposure_default" translatable="false">0</string>
+
+    <!-- Framing grid settings in preference -->
+
+    <!-- Message to show when there's no lat/lng information in the image -->
+    <!-- Title of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+    <!-- Label in message of Details dialog  -->
+
+    <!-- Settings screen, Output Format category title -->
+    <string name="pref_camera_outputformat_category">Output Format</string>
+
+    <!-- Default Output Format setting. A numerical value. Do not translate. -->
+    <string name="pref_camera_outputformat_default">1</string>
+
+    <!-- Settings screen, Select Output Format title -->
+    <string name="pref_camera_outputformat_title">Select Output Format</string>
+
+    <!-- Settings screen, Output Format dialog radio button choices -->
+    <string name="pref_camera_outputformat_entry_1">3GP</string>
+    <string name="pref_camera_outputformat_entry_2">MP4</string>
+
+    <!-- Settings screen, Output Format dialog title -->
+    <string name="pref_camera_outputformat_dialogtitle">Output Format</string>
+
+
+    <!-- Used to format image dimensions in Details dialog. e.g. 64 x 64 -->
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+
+    <!-- Default video duration setting. A numerical value.-->
+    <string name="pref_camera_video_duration_default" translatable="false">10</string>
+
+    <!-- Settings screen, Video duration title -->
+    <string name="pref_camera_video_duration_title">Video duration</string>
+
+    <!-- Settings screen, Video duration dialog radio button choices -->
+    <string name="pref_camera_video_duration_entry_mms">
+        <xliff:g id="duration" example="60">60</xliff:g> seconds (for MMS)
+    </string>
+    <string name="pref_camera_video_duration_entry_10">10 minutes</string>
+    <string name="pref_camera_video_duration_entry_30">30 minutes</string>
+    <string name="pref_camera_video_duration_entry_600">10 hours</string>
+
+    <!-- Settings screen, Video duration dialog title -->
+    <string name="pref_camera_video_duration_dialogtitle">Video duration</string>
+
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <!-- Unit of measure in the Details dialog frames per second. e.g. 20 fps -->
+    <!-- Unit of measure in the Details dialog K bits per second. e.g. 192 Kbps -->
+    <!-- Unit of measure in the Details dialog M bits per second. e.g. 2.3 Mbps -->
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+    <string name="details_ok">OK</string>
+
+    <!-- Displayed in the title of the dialog for things to do with a picture that
+         is to be sent to another application: -->
+
+    <!-- Displayed in the title of the dialog for things to do with a picture that
+         is to be "set as" (e.g. set as contact photo or set as wallpaper) -->
+
+    <!-- Displayed in the title of the dialog for things to do with a video that
+         is to be sent to another application. -->
+
+    <!-- Low-memory dialog message -->
+    <string name="spaceIsLow_content">Your SD card is running out of space. Change the quality setting or delete items from Gallery.</string>
+
+    <!-- Camera format string for new image files. Passed to java.text.SimpleDateFormat. -->
+    <string name="image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmssSSS"</string>
+
+    <!-- Video Camera format string for new video files. Passed to java.text.SimpleDateFormat. -->
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmssSSS"</string>
+
+    <!-- The messsage shown when video record reaches size limit. -->
+    <string name="video_reach_size_limit">Size limit reached.</string>
+
+    <!-- The title show on the zoom controller -->
+    <string name="zoom_control_title">Zoom</string>
+
+    <string name="switch_to_camera_lable">Switch to camera</string>
+    <string name="switch_to_video_lable">Switch to video</string>
+
+
+    <!-- MMS custom settings -->
+    <string name="pref_omap3_camera_raw_title">RAW Dump</string>
+    <string name="pref_omap3_camera_raw_default">false</string>
+    <string name="pref_omap3_camera_raw_entry_enable">Enable</string>
+    <string name="pref_omap3_camera_raw_entry_disable">Disable</string>
+
+    <string name="pref_omap3_camera_antibanding_title">Antibanding</string>
+    <string name="pref_omap3_camera_antibanding_default">off</string>
+    <string name="pref_omap3_camera_antibanding_entry_off">Off</string>
+    <string name="pref_omap3_camera_antibanding_entry_50">50hz</string>
+    <string name="pref_omap3_camera_antibanding_entry_60">60hz</string>
+
+    <string name="pref_omap3_camera_manualfocus_title">Manual Focus</string>
+    <string name="pref_omap3_camera_manualfocus_default" translatable="false">-1</string>
+    <string name="pref_omap3_camera_manualfocus_entry_off">Off</string>
+    <string name="pref_omap3_camera_manualfocus_entry_0">0</string>
+    <string name="pref_omap3_camera_manualfocus_entry_10">10</string>
+    <string name="pref_omap3_camera_manualfocus_entry_20">20</string>
+    <string name="pref_omap3_camera_manualfocus_entry_30">30</string>
+    <string name="pref_omap3_camera_manualfocus_entry_40">40</string>
+    <string name="pref_omap3_camera_manualfocus_entry_50">50</string>
+    <string name="pref_omap3_camera_manualfocus_entry_60">60</string>
+    <string name="pref_omap3_camera_manualfocus_entry_70">70</string>
+    <string name="pref_omap3_camera_manualfocus_entry_80">80</string>
+    <string name="pref_omap3_camera_manualfocus_entry_90">90</string>
+
+    <string name="pref_omap3_camera_burst_title">Continuous capture</string>
+    <string name="pref_omap3_camera_burst_default">0</string>
+    <string name="pref_omap3_camera_burst_entry_zero">0</string>
+    <string name="pref_omap3_camera_burst_entry_one">1</string>
+    <string name="pref_omap3_camera_burst_entry_two">2</string>
+    <string name="pref_omap3_camera_burst_entry_three">3</string>
+    <string name="pref_omap3_camera_burst_entry_four">4</string>
+    <string name="pref_omap3_camera_burst_entry_five">5</string>
+    <string name="pref_omap3_camera_burst_entry_six">6</string>
+    <string name="pref_omap3_camera_burst_entry_seven">7</string>
+    <string name="pref_omap3_camera_burst_entry_eight">8</string>
+    <string name="pref_omap3_camera_burst_entry_nine">9</string>
+    <string name="pref_omap3_camera_burst_entry_10">10</string>
+    <string name="pref_omap3_camera_burst_entry_11">11</string>
+    <string name="pref_omap3_camera_burst_entry_12">12</string>
+    <string name="pref_omap3_camera_burst_entry_13">13</string>
+    <string name="pref_omap3_camera_burst_entry_14">14</string>
+    <string name="pref_omap3_camera_burst_entry_15">15</string>
+
+	<string name="pass">Pass</string>
+	<string name="fail">Fail</string>
+</resources>

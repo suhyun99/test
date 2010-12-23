@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:camera="http://schemas.android.com/apk/res/com.lge.cameratest"
+        android:background="@drawable/camera_background"
+        android:id="@+id/camera"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.lge.cameratest.PreviewFrameLayout android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+        <FrameLayout android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_view_finder">
+            <SurfaceView android:id="@+id/camera_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <AbsoluteLayout android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <com.lge.cameratest.FocusRectangle
+                        android:id="@+id/focus_rectangle"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"/>
+            </AbsoluteLayout>
+            <com.lge.cameratest.LowLightIndicator
+                android:id="@+id/lowlight_indicator"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+             <ImageView android:id="@+id/showLastImageView"
+             	android:layout_width = "match_parent"
+             	android:layout_height = "match_parent"
+             	android:scaleType="centerInside"
+             	android:background="#F000"
+             	android:visibility="gone"
+             	/>
+             	
+             <Button android:id="@+id/testmode_pass"
+             	android:layout_width = "200px"
+             	android:layout_height = "wrap_content"
+             	android:textSize="33px"
+             	android:text = "@string/pass"
+             	android:visibility="gone"
+             	android:layout_gravity="bottom|left"
+             	android:layout_marginLeft="20px" 
+             	android:textColor="#FF0000FF"
+             	/>
+             <Button android:id="@+id/testmode_fail"
+             	android:layout_width = "200px"
+             	android:layout_height = "wrap_content"
+             	android:textSize="33px"
+             	android:text = "@string/fail"
+             	android:visibility="gone"
+             	android:layout_gravity="bottom|right"
+             	android:layout_marginRight="20px"
+             	android:textColor="#FFFF0000"        
+             	/>    	 	
+             	
+             	<!-- 
+             	<Button android:id="@+id/test"
+             	android:text = "view"
+             	android:layout_width = "50dp"
+             	android:layout_height = "50dp"
+             	/>
+        --></FrameLayout>
+    </com.lge.cameratest.PreviewFrameLayout>
+
+</LinearLayout>

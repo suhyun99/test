@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceGroup
+        xmlns:camera="http://schemas.android.com/apk/res/com.lge.cameratest" >
+    <PreferenceGroup
+            camera:title="@string/pref_omap3_camera_settings_category">
+        <IconListPreference
+                camera:key="pref_omap3_camera_flashmode_key"
+                camera:defaultValue="@string/pref_omap3_camera_flashmode_default"
+                camera:title="@string/pref_omap3_camera_flashmode_title"
+                camera:icons="@array/pref_omap3_camera_flashmode_icons"
+                camera:largeIcons="@array/flashmode_icons"
+                camera:entries="@array/pref_omap3_camera_flashmode_entries"
+                camera:entryValues="@array/pref_omap3_camera_flashmode_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_exposure_key"
+                camera:defaultValue="@string/pref_omap3_exposure_default"
+                camera:title="@string/pref_omap3_exposure_title" />
+        <ListPreference
+                camera:key="pref_omap3_camera_scenemode_key"
+                camera:defaultValue="@string/pref_omap3_camera_scenemode_default"
+                camera:title="@string/pref_omap3_camera_scenemode_title"
+                camera:entries="@array/pref_omap3_camera_scenemode_entries"
+                camera:entryValues="@array/pref_omap3_camera_scenemode_entryvalues" />
+        <IconListPreference
+                camera:key="pref_omap3_camera_whitebalance_key"
+                camera:defaultValue="@string/pref_omap3_camera_whitebalance_default"
+                camera:title="@string/pref_omap3_camera_whitebalance_title"
+                camera:icons="@array/pref_omap3_camera_whitebalance_icons"
+                camera:largeIcons="@array/whitebalance_icons"
+                camera:entries="@array/pref_omap3_camera_whitebalance_entries"
+                camera:entryValues="@array/pref_omap3_camera_whitebalance_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_coloreffect_key"
+                camera:defaultValue="@string/pref_omap3_camera_coloreffect_default"
+                camera:title="@string/pref_omap3_camera_coloreffect_title"
+                camera:entries="@array/pref_omap3_camera_coloreffect_entries"
+                camera:entryValues="@array/pref_omap3_camera_coloreffect_entryvalues" />
+        <RecordLocationPreference
+                camera:key="pref_omap3_camera_recordlocation_key"
+                camera:defaultValue="@string/pref_omap3_camera_recordlocation_default"
+                camera:title="@string/pref_omap3_camera_recordlocation_title"
+                camera:icons="@array/pref_omap3_camera_recordlocation_icons"
+                camera:largeIcons="@array/recordlocation_icons"
+                camera:entries="@array/pref_omap3_camera_recordlocation_entries"
+                camera:entryValues="@array/pref_omap3_camera_recordlocation_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_picturesize_key"
+                camera:title="@string/pref_omap3_camera_picturesize_title"
+                camera:entries="@array/pref_omap3_camera_picturesize_entries"
+                camera:entryValues="@array/pref_omap3_camera_picturesize_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_previewsize_key"
+                camera:defaultValue="@string/pref_omap3_camera_previewsize_default"
+                camera:title="@string/pref_omap3_camera_previewsize_title"
+                camera:entries="@array/pref_omap3_camera_previewsize_entries"
+                camera:entryValues="@array/pref_omap3_camera_previewsize_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_previewframerate_key"
+                camera:defaultValue="@string/pref_omap3_camera_previewframerate_default"
+                camera:title="@string/pref_omap3_camera_previewframerate_title"
+                camera:entries="@array/pref_omap3_camera_previewframerate_entries"
+                camera:entryValues="@array/pref_omap3_camera_previewframerate_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_jpegquality_key"
+                camera:defaultValue="@string/pref_omap3_camera_jpegquality_default"
+                camera:title="@string/pref_omap3_camera_jpegquality_title"
+                camera:entries="@array/pref_omap3_camera_jpegquality_entries"
+                camera:entryValues="@array/pref_omap3_camera_jpegquality_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_saturation_key"
+                camera:defaultValue="@string/pref_omap3_camera_saturation_default"
+                camera:title="@string/pref_omap3_camera_saturation_title"
+                camera:entries="@array/pref_omap3_camera_saturation_entries"
+                camera:entryValues="@array/pref_omap3_camera_saturation_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_sharpness_key"
+                camera:defaultValue="@string/pref_omap3_camera_sharpness_default"
+                camera:title="@string/pref_omap3_camera_sharpness_title"
+                camera:entries="@array/pref_omap3_camera_sharpness_entries"
+                camera:entryValues="@array/pref_omap3_camera_sharpness_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_brightness_key"
+                camera:defaultValue="@string/pref_omap3_camera_brightness_default"
+                camera:title="@string/pref_omap3_camera_brightness_title"
+                camera:entries="@array/pref_omap3_camera_brightness_entries"
+                camera:entryValues="@array/pref_omap3_camera_brightness_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_contrast_key"
+                camera:defaultValue="@string/pref_omap3_camera_contrast_default"
+                camera:title="@string/pref_omap3_camera_contrast_title"
+                camera:entries="@array/pref_omap3_camera_contrast_entries"
+                camera:entryValues="@array/pref_omap3_camera_contrast_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_focusmode_key"
+                camera:defaultValue="@string/pref_omap3_camera_focusmode_default"
+                camera:title="@string/pref_omap3_camera_focusmode_title"
+                camera:entries="@array/pref_omap3_camera_focusmode_entries"
+                camera:entryValues="@array/pref_omap3_camera_focusmode_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_metermode_key"
+                camera:defaultValue="@string/pref_omap3_camera_metermode_default"
+                camera:title="@string/pref_omap3_camera_metermode_title"
+                camera:entries="@array/pref_omap3_camera_metermode_entries"
+                camera:entryValues="@array/pref_omap3_camera_metermode_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_exposuremode_key"
+                camera:defaultValue="@string/pref_omap3_camera_exposuremode_default"
+                camera:title="@string/pref_omap3_camera_exposuremode_title"
+                camera:entries="@array/pref_omap3_camera_exposuremode_entries"
+                camera:entryValues="@array/pref_omap3_camera_exposuremode_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_caf_key"
+                camera:defaultValue="@string/pref_omap3_camera_caf_default"
+                camera:title="@string/pref_omap3_camera_caf_title"
+                camera:entries="@array/pref_omap3_camera_caf_entries"
+                camera:entryValues="@array/pref_omap3_camera_caf_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_iso_key"
+                camera:defaultValue="@string/pref_omap3_camera_iso_entry_default"
+                camera:title="@string/pref_omap3_camera_iso_title"
+                camera:entries="@array/pref_omap3_camera_iso_entries"
+                camera:entryValues="@array/pref_omap3_camera_iso_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_quickcapture_key"
+                camera:defaultValue="@string/pref_omap3_camera_quickcapture_default"
+                camera:title="@string/pref_omap3_camera_quickcapture_title"
+                camera:entries="@array/pref_omap3_camera_quickcapture_entries"
+                camera:entryValues="@array/pref_omap3_camera_quickcapture_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_mode_key"
+                camera:defaultValue="@string/pref_omap3_camera_mode_default"
+                camera:title="@string/pref_omap3_camera_mode_title"
+                camera:entries="@array/pref_omap3_camera_mode_entries"
+                camera:entryValues="@array/pref_omap3_camera_mode_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_ipp_key"
+                camera:defaultValue="@string/pref_omap3_camera_ipp_default"
+                camera:title="@string/pref_omap3_camera_ipp_title"
+                camera:entries="@array/pref_omap3_camera_ipp_entries"
+                camera:entryValues="@array/pref_omap3_camera_ipp_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_shutter_key"
+                camera:defaultValue="@string/pref_omap3_camera_shutter_default"
+                camera:title="@string/pref_omap3_camera_shutter_title"
+                camera:entries="@array/pref_omap3_camera_shutter_entries"
+                camera:entryValues="@array/pref_omap3_camera_shutter_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_thumbnail_key"
+                camera:defaultValue="@string/pref_omap3_camera_thumbnail_default"
+                camera:title="@string/pref_omap3_camera_thumbnail_title"
+                camera:entries="@array/pref_omap3_camera_thumbnail_entries"
+                camera:entryValues="@array/pref_omap3_camera_thumbnail_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_raw_key"
+                camera:defaultValue="@string/pref_omap3_camera_raw_default"
+                camera:title="@string/pref_omap3_camera_raw_title"
+                camera:entries="@array/pref_omap3_camera_raw_entries"
+                camera:entryValues="@array/pref_omap3_camera_raw_entryvalues" />
+        <IconListPreference
+                camera:key="pref_omap3_camera_manualfocus_key"
+                camera:defaultValue="@string/pref_omap3_camera_manualfocus_default"
+                camera:title="@string/pref_omap3_camera_manualfocus_title"
+                camera:icons="@array/pref_omap3_camera_manualfocus_icons"
+                camera:largeIcons="@array/manualfocus_icons"
+                camera:entries="@array/pref_omap3_camera_manualfocus_entries"
+                camera:entryValues="@array/pref_omap3_camera_manualfocus_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_antibanding_key"
+                camera:defaultValue="@string/pref_omap3_camera_antibanding_default"
+                camera:title="@string/pref_omap3_camera_antibanding_title"
+                camera:entries="@array/pref_omap3_camera_antibanding_entries"
+                camera:entryValues="@array/pref_omap3_camera_antibanding_entryvalues" />
+        <ListPreference
+                camera:key="pref_omap3_camera_burst_key"
+                camera:title="@string/pref_omap3_camera_burst_title"
+                camera:entries="@array/pref_omap3_camera_burst_entries"
+                camera:defaultValue="@string/pref_omap3_camera_burst_default"
+                camera:entryValues="@array/pref_omap3_camera_burst_entryvalues" />
+    </PreferenceGroup>
+</PreferenceGroup>
